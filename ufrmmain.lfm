@@ -1,0 +1,102 @@
+object frmMain: TfrmMain
+  Left = 318
+  Height = 141
+  Top = 158
+  Width = 523
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'XORs'
+  ClientHeight = 141
+  ClientWidth = 523
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '1.8.2.0'
+  object Label1: TLabel
+    Left = 200
+    Height = 13
+    Top = 96
+    Width = 18
+    Caption = 'Key'
+    ParentColor = False
+  end
+  object txtdecoded: TEdit
+    Left = 8
+    Height = 21
+    Top = 24
+    Width = 353
+    TabOrder = 0
+  end
+  object Button6: TButton
+    Left = 368
+    Height = 25
+    Top = 24
+    Width = 49
+    Caption = '...'
+    OnClick = Button6Click
+    TabOrder = 1
+  end
+  object Button7: TButton
+    Left = 424
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Encrypt XOR'
+    OnClick = Button7Click
+    TabOrder = 2
+  end
+  object txtencoded: TEdit
+    Left = 8
+    Height = 21
+    Top = 72
+    Width = 353
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 368
+    Height = 25
+    Top = 72
+    Width = 49
+    Caption = '...'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 424
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Decrypt XOR'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object txtkey1: TEdit
+    Left = 152
+    Height = 21
+    Top = 112
+    Width = 33
+    TabOrder = 6
+    Text = '2'
+  end
+  object txtkey2: TEdit
+    Left = 192
+    Height = 21
+    Top = 112
+    Width = 33
+    TabOrder = 7
+    Text = '2'
+  end
+  object txtkey3: TEdit
+    Left = 232
+    Height = 21
+    Top = 112
+    Width = 33
+    TabOrder = 8
+    Text = '2'
+  end
+  object OpenDialog1: TOpenDialog
+    left = 32
+    top = 16
+  end
+end
