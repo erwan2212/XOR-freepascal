@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="xor_"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="73" Y="18"/>
+        <CursorPos X="65" Y="22"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
@@ -41,5 +41,4 @@
     </Units>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
-  <SkipCheckLCLInterfaces Value="True"/>
 </CONFIG>
