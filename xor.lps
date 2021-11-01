@@ -9,7 +9,6 @@
         <Filename Value="xor.dpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="xor_"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="65" Y="22"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -21,8 +20,10 @@
         <ComponentName Value="frmMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="51" Y="15"/>
+        <TopLine Value="106"/>
+        <CursorPos X="44" Y="120"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -32,13 +33,29 @@
         <Filename Value="uXOR.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="6"/>
         <CursorPos X="10" Y="22"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="113" Column="31" TopLine="99"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="130" Column="17" TopLine="104"/>
+      </Position2>
+      <Position3>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="128" Column="29" TopLine="106"/>
+      </Position3>
+      <Position4>
+        <Filename Value="ufrmmain.pas"/>
+        <Caret Line="122" Column="38" TopLine="106"/>
+      </Position4>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

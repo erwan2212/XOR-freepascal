@@ -16,6 +16,9 @@ uses
   ComCtrls,  Graphics,  Forms  ;
 
 type
+
+  { TfrmMain }
+
   TfrmMain = class(TForm)
     OpenDialog1: TOpenDialog;
     txtdecoded: TEdit;
@@ -33,6 +36,7 @@ type
     procedure Button7Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -92,14 +96,14 @@ fillchar(key,3,0);
 key[0]:=strtoint(txtkey1.Text );
 key[1]:=strtoint(txtkey2.Text );
 key[2]:=strtoint(txtkey3.Text );
-FileEncrypt( txtdecoded.Text,txtdecoded.text+'.xor',key);
-showmessage('ok, '+txtdecoded.text+'.xor created');
+FileEncrypt( txtdecoded.Text,txtdecoded.text+'.encrypted',key);
+showmessage('ok, '+txtdecoded.text+'.encrypted created');
 
 end;
 
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
-OpenDialog1.Filter :='Xor files|*.xor|*.*|*.*';
+OpenDialog1.Filter :='encrypted files|*.encrypted|*.*|*.*';
 OpenDialog1.InitialDir :=GetCurrentDir ;
 if OpenDialog1.Execute=false then exit;
 txtencoded.Text :=OpenDialog1.FileName ;
@@ -114,9 +118,16 @@ fillchar(key,3,0);
 key[0]:=strtoint(txtkey1.Text );
 key[1]:=strtoint(txtkey2.Text );
 key[2]:=strtoint(txtkey3.Text );
-FileDecrypt( txtencoded.Text,txtencoded.text+'.exe',key);
-showmessage('ok, '+txtencoded.text+'.exe created');
+FileDecrypt( txtencoded.Text,changefileext(txtencoded.Text,'.decrypted'),key);
+showmessage('ok, '+changefileext(txtencoded.Text,'.decrypted')+' created');
 
+end;
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+txtkey1.Text:=inttostr($400);
+txtkey2.Text:=inttostr($1000);
+txtkey3.Text:=inttostr($4000);
 end;
 
 end.

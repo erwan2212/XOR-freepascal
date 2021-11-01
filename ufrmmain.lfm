@@ -9,9 +9,11 @@ object frmMain: TfrmMain
   ClientHeight = 141
   ClientWidth = 523
   Color = clBtnFace
+  DesignTimePPI = 120
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
   LCLVersion = '1.8.2.0'
   object Label1: TLabel
     Left = 200
@@ -72,10 +74,10 @@ object frmMain: TfrmMain
     TabOrder = 5
   end
   object txtkey1: TEdit
-    Left = 152
+    Left = 136
     Height = 21
     Top = 112
-    Width = 33
+    Width = 49
     TabOrder = 6
     Text = '2'
   end
@@ -83,15 +85,15 @@ object frmMain: TfrmMain
     Left = 192
     Height = 21
     Top = 112
-    Width = 33
+    Width = 48
     TabOrder = 7
     Text = '2'
   end
   object txtkey3: TEdit
-    Left = 232
+    Left = 248
     Height = 21
     Top = 112
-    Width = 33
+    Width = 49
     TabOrder = 8
     Text = '2'
   end
